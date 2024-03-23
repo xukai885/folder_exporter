@@ -5,7 +5,6 @@ ENV GO111MODULE=on \
     GOOS=linux \
     GOARCH=amd64
 WORKDIR /build
-# 将代码复制到容器中
 COPY go.mod .
 RUN go mod download
 COPY . .
